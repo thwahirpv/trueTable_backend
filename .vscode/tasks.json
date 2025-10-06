@@ -1,0 +1,48 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Convex Dev Server",
+      "type": "shell",
+      "command": "npm run dev",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$tsc"],
+      "detail": "Starts the Convex development server."
+    },
+    {
+      "label": "Deploy Convex Backend",
+      "type": "shell",
+      "command": "npm run deploy",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Deploys the Convex backend to production."
+    },
+    {
+      "label": "Run Unit Tests",
+      "type": "shell",
+      "command": "npm run test:unit",
+      "group": "test",
+      "problemMatcher": ["$jest"],
+      "detail": "Runs unit tests for the Convex functions."
+    },
+    {
+      "label": "Run Integration Tests",
+      "type": "shell",
+      "command": "npm run test:integration",
+      "group": "test",
+      "problemMatcher": ["$jest"],
+      "detail": "Runs integration tests for the Convex functions."
+    },
+    {
+      "label": "Seed Database",
+      "type": "shell",
+      "command": "npm run seed",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Seeds the database with initial data."
+    }
+  ]
+}

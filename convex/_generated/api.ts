@@ -1,0 +1,1 @@
+// This file is auto-generated and contains type definitions for the Convex API, providing type safety for function calls.
